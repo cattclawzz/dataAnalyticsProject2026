@@ -1,0 +1,1 @@
+!CSS custom functions only work in notepad++ on school pc!
