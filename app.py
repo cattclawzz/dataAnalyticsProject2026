@@ -1,17 +1,16 @@
 from flask import Flask, render_template, request
 import pandas as pd
-from matplotlib import use; use('Agg') #macOS bugFix
+from matplotlib import use; use('Agg') #macOS bug fix
 import matplotlib.pyplot as plt
 
 app = Flask(__name__)
-df = pd.read_csv("employeeCleaned.csv")
 
 @app.route("/", methods=["GET", "POST"]) 
 
 def index():
     return render_template(
         "index.html",
-        foo = "Hello World!"
+        foo = "test"
     )
 
 #!!flask server!!
