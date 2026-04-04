@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from celluloid import Camera
 import pandas as pd
 
-def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps):
+def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps, time):
 
     print("Please wait...")
 
@@ -32,9 +32,11 @@ def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps):
     
     xdata, ydata = [], [] 
     
-    def animate(i): 
-        a = i // fps
-        t = (i % fps) / fps
+    def animate(i):
+        x = (time*fps)/len(yAxis)
+
+        a = i // x
+        t = (i % x) / x
 
         if a < len(yAxis):
             xdata.append(a + t)
@@ -44,7 +46,7 @@ def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps):
         
         return line,
     
-    anim = animation.FuncAnimation(fig, animate, init_func = init, frames = len(yAxis)*fps, interval = 2, blit = True) 
+    anim = animation.FuncAnimation(fig, animate, init_func = init, frames = time*fps, interval = 2, blit = True) 
     anim.save('animation.gif', writer='pillow', fps=fps)
 
     print("Program completed")
@@ -58,4 +60,5 @@ animatedGraph(
     xAxis = df["name"],
     yAxis = df["activityLevel"],
     fps = 30,
+    time = 7,
 )
