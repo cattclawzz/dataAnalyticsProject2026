@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Flask server code</h1>
+
+    <div class="script">
+        <p>from flask import Flask, render_template, request</p>
+        <p>import pandas as pd</p>
+        <p>from matplotlib import use; use('Agg') #macOS bug fix</p>
+        <p>import matplotlib.pyplot as plt</p>
+        <p></p>
+        <p>app = Flask(__name__)</p>
+        <p></p>
+        <p>@app.route("/", methods=["GET", "POST"])</p>
+        <p></p>
+        <p>def index():</p>
+        <p>    return render_template(</p>
+        <p>        "index.html",</p>
+        <p>        foo = "test"</p>
+        <p>    )</p>
+        <p></p>
+        <p>#!!flask server!!</p>
+        <p>if __name__ == "__main__":</p>
+        <p>    app.run(debug=True)</p>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .script {
+        height: 200px;
+        background-color: lightgray;
+        overflow: scroll;
+        font-family: monaco,Consolas,Lucida Console,monospace;
+    }
+</style>

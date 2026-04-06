@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>Data Analysis Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='readFile.js') }}"></script>
 </head>
 
 <body>
 
-    {{foo}}
+    <pre id="demo" data-file="{{ url_for('static', filename='readFile.js') }}">
+        !Error! file not found, sorry :(
+    </pre>
 
 </body>
 

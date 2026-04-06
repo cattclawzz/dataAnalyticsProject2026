@@ -1,3 +1,5 @@
 !CSS custom functions only work in notepad++ on school pc!
 
 pip install: flask, pandas, matplotlib, celluloid
+
+Open folder in terminal "py app.py" on home PC "python app.py" on school
