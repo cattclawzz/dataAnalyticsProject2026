@@ -34,14 +34,13 @@ h2{
     justify-content: space-between;
 }
 
-img{
+img, .script{
     height: 420px;
     width: 700px;
 }
 
 .script {
-    height: 200px;
-    width: 700px;
+
     background-color: rgb(25,40,40);
     overflow: scroll;
     font-family: 'Cascadia Code' !important;
@@ -52,11 +51,19 @@ img{
 .grid {
   display: grid;
   grid-template-areas:
-    leftMargin header header rightMargin
-    leftMargin image contentA rightMargin
-    leftMargin contentB code rightMargin;
+    "leftMargin title title rightMargin"
+    "leftMargin image contentA rightMargin"
+    "leftMargin contentB code rightMargin";
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  gap: 3px;
-  background-color: dodgerblue;
-  padding: 5px;
 }
+
+.grid div {
+  padding: 10px;
+}
+.grid div.title {grid-area: title;}
+.grid div.contentA {grid-area: contentA;}
+.grid div.contentB {grid-area: contentB;}
+.grid div.image {grid-area: image;}
+.grid div.code {grid-area: code;}
+.grid div.leftMargin {grid-area: leftMargin;}
+.grid div.rightMargin {grid-area: rightMargin;}
