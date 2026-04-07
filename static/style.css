@@ -19,7 +19,7 @@ h1, h2{
 }
 
 h2{
-    border-bottom: solid black;
+    text-decoration: underline;
 }
 
 .menu {
@@ -50,36 +50,44 @@ h2{
     color: white;
 }
 
+.grid {
+  display: grid;
+  grid-template-areas:
+    "image contentA"
+    "contentB script";
+  grid-template-columns: 1fr 1fr;
+  padding: 0 200px;
+}
+.grid div {
+  padding: 10px;
+}
+
+.grid div.contentA {
+    grid-area: contentA;
+}
+.grid div.contentB {
+    grid-area: contentB;
+}
+
+p{
+    text-indent: 50px;
+}
+
+.grid div.image {
+    grid-area: image;
+}
+
 img, .script{
     height: 420px;
     width: 700px;
+    place-self: center;
 }
 
 .script {
-
+    grid-area: script;
     background-color: rgb(25,40,40);
     overflow: scroll;
     font-family: 'Cascadia Code' !important;
     color: white;
     margin: 20px;
 }
-
-.grid {
-  display: grid;
-  grid-template-areas:
-    "leftMargin title title rightMargin"
-    "leftMargin image contentA rightMargin"
-    "leftMargin contentB code rightMargin";
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-}
-
-.grid div {
-  padding: 10px;
-}
-.grid div.title {grid-area: title;}
-.grid div.contentA {grid-area: contentA;}
-.grid div.contentB {grid-area: contentB;}
-.grid div.image {grid-area: image;}
-.grid div.code {grid-area: code;}
-.grid div.leftMargin {grid-area: leftMargin;}
-.grid div.rightMargin {grid-area: rightMargin;}
