@@ -1,6 +1,5 @@
 import matplotlib.animation as animation 
 import matplotlib.pyplot as plt
-from celluloid import Camera
 import pandas as pd
 
 def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps, time):
