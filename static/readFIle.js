@@ -4,5 +4,6 @@ window.onload = function() {
 
     fetch(file)
         .then(x => x.text())
-        .then(y => demo.textContent = y);
+        //.then(y => demo.textContent = y);
+        .then(y => demo.innerHTML = y);
 }

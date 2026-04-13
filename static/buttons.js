@@ -1,23 +1,31 @@
 const items = [
-  "Investigation",
-  "Data collection & cleaning",
-  "Mean, Median, Mode",
-  "Line Graph",
-  "Scatter Graph",
-  "Bar Graph",
-  "Pie Chart",
-  "Linear Regression",
-  "Conclusion",
-  "References"
+  "investigation",
+  "dataCollectionAndCleaning",
+  "meanMedianAndMode",
+  "lineGraph",
+  "scatterGraph",
+  "barGraph",
+  "pieChart",
+  "linearRegression",
+  "conclusion",
+  "references"
 ];
 
-const selectedIndex = 0;
+function camelCaseSplitter(str) {
+  return str
+    .replace(/([A-Z])/g, ' $1')
+    .replace(/^./, function(s) { return s.toUpperCase(); });
+}
 
-const container = document.getElementById("nav");
+function navBar(pages){
+  const container = document.getElementById("nav");
 
-items.forEach((text, index) => {
-  const div = document.createElement("div");
-  div.className = "button" + (index === selectedIndex ? " selected" : "");
-  div.textContent = text;
-  container.appendChild(div);
-});
+  pages.forEach((text, index) => {
+    const div = document.createElement("div");
+    div.className = "button"; //+ (index === selectedIndex ? " selected" : "")
+    div.textContent = camelCaseSplitter(text);
+    container.appendChild(div);
+  });
+}
+
+navBar(items)
