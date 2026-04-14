@@ -27,7 +27,7 @@ h2{
     height: 40px;
 }
 
-.container{
+.nav{
     background: slategrey;
     display: flex;
     align-items: center;
@@ -90,4 +90,15 @@ img, .script{
     font-family: 'Cascadia Code' !important;
     color: white;
     margin: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.adjust {
+    padding-top: 55px !important;
 }

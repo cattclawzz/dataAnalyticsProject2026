@@ -18,13 +18,13 @@ function camelCaseSplitter(str) {
 }
 
 function navBar(pages){
-  const container = document.getElementById("nav");
+  const nav = document.getElementById("nav");
 
   pages.forEach((text, index) => {
     const div = document.createElement("div");
     div.className = "button"; //+ (index === selectedIndex ? " selected" : "")
     div.textContent = camelCaseSplitter(text);
-    container.appendChild(div);
+    nav.appendChild(div);
   });
 }
 
