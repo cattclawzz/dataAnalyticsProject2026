@@ -17,19 +17,35 @@
 
     <div id="content">
 
-        <div class="page investigation" id="investigation"> investigation </div>
-        <div class="page dataCollectionAndCleaning" id="dataCollectionAndCleaning"> dataCollectionAndCleaning </div>
-        <div class="page meanMedianAndMode" id="meanMedianAndMode"> meanMedianAndMode </div>
+        <div class="page investigation" id="investigation" data-file="{{ url_for('static', filename='pages/investigation.html') }}"> </div>
+	    <script> readFile("investigation"); </script>
 
-        <div class="page lineGraph" id="lineGraph" data-file="{{ url_for('static', filename='lineGraph.html') }}"> </div>
+        <div class="page dataCollectionAndCleaning" id="dataCollectionAndCleaning" data-file="{{ url_for('static', filename='pages/dataCollectionAndCleaning.html') }}"> </div>
+	    <script> readFile("dataCollectionAndCleaning"); </script>
+
+        <div class="page meanMedianAndMode" id="meanMedianAndMode" data-file="{{ url_for('static', filename='pages/meanMedianAndMode.html') }}"> </div>
+	    <script> readFile("meanMedianAndMode"); </script>
+        
+        <div class="page lineGraph" id="lineGraph" data-file="{{ url_for('static', filename='pages/lineGraph.html') }}"> </div>
 	    <script> readFile("lineGraph"); </script>
 
-        <div class="page scatterGraph" id="scatterGraph"> scatterGraph </div>
-        <div class="page barGraph" id="barGraph"> barGraph </div>
-        <div class="page pieChart" id="pieChart"> pieChart </div>
-        <div class="page linearRegression" id="linearRegression"> linearRegression </div>
-        <div class="page conclusion" id="conclusion"> conclusion </div>
-        <div class="page references" id="references"> references </div>
+        <div class="page scatterGraph" id="scatterGraph" data-file="{{ url_for('static', filename='pages/scatterGraph.html') }}"> </div>
+	    <script> readFile("scatterGraph"); </script>
+
+        <div class="page barGraph" id="barGraph" data-file="{{ url_for('static', filename='pages/barGraph.html') }}"> </div>
+	    <script> readFile("barGraph"); </script>
+
+        <div class="page pieChart" id="pieChart" data-file="{{ url_for('static', filename='pages/pieChart.html') }}"> </div>
+	    <script> readFile("pieChart"); </script>
+
+        <div class="page linearRegression" id="linearRegression" data-file="{{ url_for('static', filename='pages/linearRegression.html') }}"> </div>
+	    <script> readFile("linearRegression"); </script>
+
+        <div class="page conclusion" id="conclusion" data-file="{{ url_for('static', filename='pages/conclusion.html') }}"> </div>
+	    <script> readFile("conclusion"); </script>
+
+        <div class="page references" id="references" data-file="{{ url_for('static', filename='pages/references.html') }}"> </div>
+	    <script> readFile("references"); </script>
     </div>
 
     <script src="{{ url_for('static', filename='buttons.js') }}"></script>
