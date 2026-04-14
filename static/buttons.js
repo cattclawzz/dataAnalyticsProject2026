@@ -1,4 +1,4 @@
-const items = [
+const pages = [
   "investigation",
   "dataCollectionAndCleaning",
   "meanMedianAndMode",
@@ -22,10 +22,29 @@ function navBar(pages){
 
   pages.forEach((text, index) => {
     const div = document.createElement("div");
-    div.className = "button"; //+ (index === selectedIndex ? " selected" : "")
+    div.className = "button";
     div.textContent = camelCaseSplitter(text);
+    div.id = text + "Button";
+    div.onclick = () => togglePage(text);
     nav.appendChild(div);
   });
 }
 
-navBar(items)
+navBar(pages);
+
+function reset(){
+  for (let i = 0; i < pages.length; i++) {
+    document.getElementById(pages[i]).style.display = "none";
+    document.getElementById(pages[i] + "Button").classList.remove("selected");
+  }
+}
+
+reset();
+
+function togglePage(page) {
+    reset();
+    window.scrollTo(0,0);
+    document.getElementById(page).style.display = "block";
+    document.getElementById(page + "Button").classList.add("selected");
+}
+togglePage("investigation");

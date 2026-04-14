@@ -14,13 +14,25 @@
     </div>
 
     <div class="nav" id="nav"> </div>
-    <script src="{{ url_for('static', filename='buttons.js') }}"></script>
 
     <div id="content">
+
+        <div class="page investigation" id="investigation"> investigation </div>
+        <div class="page dataCollectionAndCleaning" id="dataCollectionAndCleaning"> dataCollectionAndCleaning </div>
+        <div class="page meanMedianAndMode" id="meanMedianAndMode"> meanMedianAndMode </div>
+
         <div class="page lineGraph" id="lineGraph" data-file="{{ url_for('static', filename='lineGraph.html') }}"> </div>
 	    <script> readFile("lineGraph"); </script>
+
+        <div class="page scatterGraph" id="scatterGraph"> scatterGraph </div>
+        <div class="page barGraph" id="barGraph"> barGraph </div>
+        <div class="page pieChart" id="pieChart"> pieChart </div>
+        <div class="page linearRegression" id="linearRegression"> linearRegression </div>
+        <div class="page conclusion" id="conclusion"> conclusion </div>
+        <div class="page references" id="references"> references </div>
     </div>
 
+    <script src="{{ url_for('static', filename='buttons.js') }}"></script>
     <script src="{{ url_for('static', filename='stickyHeader.js') }}"></script>
 
 </body>
