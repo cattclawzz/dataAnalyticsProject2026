@@ -20,7 +20,7 @@ function camelCaseSplitter(str) {
 function navBar(pages){
   const nav = document.getElementById("nav");
 
-  pages.forEach((text, index) => {
+  pages.forEach((text) => {
     const div = document.createElement("div");
     div.className = "button";
     div.textContent = camelCaseSplitter(text);
@@ -29,8 +29,21 @@ function navBar(pages){
     nav.appendChild(div);
   });
 }
-
 navBar(pages);
+
+function makePages(pages){
+  const nav = document.getElementById("content");
+
+  pages.forEach((text) => {
+    const div = document.createElement("div");
+    div.className = "page " + text;
+    div.id = text;
+    content.appendChild(div);
+    readFile(text, "/static/pages/" + text + ".html");
+  });
+}
+
+makePages(pages);
 
 function reset(){
   for (let i = 0; i < pages.length; i++) {
@@ -40,7 +53,6 @@ function reset(){
 }
 
 reset();
-
 function togglePage(page) {
     reset();
     window.scrollTo(0,0);

@@ -1,6 +1,5 @@
-function readFile(elementID, isScript=false){
+function readFile(elementID, file, isScript=false){
     const demo = document.getElementById(elementID);
-	const file = demo.getAttribute("data-file");
 
     fetch(file)
         .then(x => x.text())
