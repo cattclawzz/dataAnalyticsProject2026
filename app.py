@@ -1,7 +1,5 @@
-from flask import Flask, render_template, request
-import pandas as pd
+from flask import Flask, render_template
 from matplotlib import use; use('Agg') #macOS bug fix
-import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 

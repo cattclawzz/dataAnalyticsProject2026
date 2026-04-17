@@ -1,8 +1,20 @@
+function readScript(){
+    const demo = document.getElementById("demo");
+    const file = demo.getAttribute("data-file");
+
+    fetch(file)
+        .then(x => x.text())
+        .then(y => demo.textContent = y);
+}
+
 function readFile(elementID, file){
     const demo = document.getElementById(elementID);
     fetch(file)
         .then(x => x.text())
-        .then(y => demo.innerHTML = y);
+        .then(y => {
+            demo.innerHTML = y;
+            readScript();
+        });
 }
 
 function camelCaseSplitter(str) {
@@ -42,10 +54,9 @@ function buildUI(pages){
     page.id = text;
     content.appendChild(page);
     readFile(text, "/static/pages/" + text + ".html");
-    content.appendChild(page);
   });
 
-  togglePage("investigation", pages);
+  togglePage(pages[0], pages);
 }
 
 buildUI([
@@ -60,3 +71,5 @@ buildUI([
   "conclusion",
   "references"
 ]);
+
+readScript()
