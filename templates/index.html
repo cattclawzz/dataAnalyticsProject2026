@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Data Analysis Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='buttons.js') }}"></script>
 </head>
 
 <body>
@@ -15,8 +16,20 @@
     <div class="nav" id="nav"></div>
     <div id="content"></div>
 
-    <script src="{{ url_for('static', filename='buttons.js') }}"></script>
-    <script src="{{ url_for('static', filename='readFile.js') }}"></script>
+    <script>
+        buildUI([
+            "investigation",
+            "dataCollectionAndCleaning",
+            "meanMedianAndMode",
+            "lineGraph",
+            "scatterGraph",
+            "barGraph",
+            "pieChart",
+            "linearRegression",
+            "conclusion",
+            "references",
+        ]);
+    </script>
     <script src="{{ url_for('static', filename='stickyHeader.js') }}"></script>
 
 </body>

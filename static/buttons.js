@@ -1,19 +1,18 @@
-function readScript(){
-    const demo = document.getElementById("demo");
-    const file = demo.getAttribute("data-file");
-
-    fetch(file)
-        .then(x => x.text())
-        .then(y => demo.textContent = y);
-}
-
 function readFile(elementID, file){
-    const demo = document.getElementById(elementID);
+    const page = document.getElementById(elementID);
     fetch(file)
         .then(x => x.text())
         .then(y => {
-            demo.innerHTML = y;
-            readScript();
+            page.innerHTML = y;
+            const scripts = Array.from(document.getElementsByClassName("script"));
+
+            scripts.forEach((script) => {
+              const file = script.getAttribute("data-file");
+
+              fetch(file)
+                .then(a => a.text())
+                .then(b => script.textContent = b);
+            });
         });
 }
 
@@ -58,18 +57,3 @@ function buildUI(pages){
 
   togglePage(pages[0], pages);
 }
-
-buildUI([
-  "investigation",
-  "dataCollectionAndCleaning",
-  "meanMedianAndMode",
-  "lineGraph",
-  "scatterGraph",
-  "barGraph",
-  "pieChart",
-  "linearRegression",
-  "conclusion",
-  "references"
-]);
-
-readScript()

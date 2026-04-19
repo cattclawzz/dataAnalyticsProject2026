@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid test</title>
+</head>
+
+<body>
+
+<style>
+    table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+</style>
+
+<table id="csv">
+</table>
+
+<script>
+    const csvSample = [
+        ["a","b","c","d","e","f"],
+        ["1","2","3","4","5","6"],
+    ]
+
+    const table = document.getElementById("csv")
+    csvSample.forEach((j) => {
+        const row = document.createElement("tr");
+        j.forEach((i) => {
+            const cell = document.createElement("td");
+                cell.innerText = i;
+                row.appendChild(cell);
+        });
+        table.appendChild(row);
+    });
+</script>
+
+</body>
+
+</html>
