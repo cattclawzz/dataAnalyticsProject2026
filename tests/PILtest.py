@@ -1,17 +1,13 @@
 import os
-from pillow import Image
+from PIL import Image
 
-def extractFrames(inGif, outFolder):
+def extractLastFrame(inGif, outFolder):
     frame = Image.open(inGif)
-    nframes = 0
-    while frame:
-        frame.save( '%s/%s-%s.gif' % (outFolder, os.path.basename(inGif), nframes ) , 'GIF')
-        nframes += 1
-        try:
-            frame.seek( nframes )
-        except EOFError:
-            break;
-    return True
-    
 
-extractFrames('animation.gif', 'output')
+    frame.seek(frame.n_frames - 1)
+
+    out_path = os.path.join(outFolder, f"animationLastFrame.jpeg")
+    frame.save(out_path, 'GIF')
+
+
+extractLastFrame('animation.gif', 'tests')
