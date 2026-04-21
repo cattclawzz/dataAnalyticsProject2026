@@ -1,8 +1,18 @@
 import matplotlib.animation as animation 
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
+from PIL import Image
 
-def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps, time):
+def extractLastFrame(inGif, outFolder, outJpeg):
+    frame = Image.open(inGif)
+
+    frame.seek(frame.n_frames - 1)
+
+    out_path = os.path.join(outFolder, f"{outJpeg}.jpeg")
+    frame.save(out_path, 'GIF')
+
+def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps, time, file, folder):
 
     print("Please wait...")
 
@@ -45,12 +55,15 @@ def animatedGraph(title, xLabel, yLabel, xAxis, yAxis, fps, time):
         
         return line,
     
+    os.mkdir(f"{folder}/{file}")
+
     anim = animation.FuncAnimation(fig, animate, init_func = init, frames = time*fps, interval = 2, blit = True) 
-    anim.save('animation.gif', writer='pillow', fps=fps)
+    anim.save(f"{folder}/{file}/{file}.gif", writer="pillow", fps=fps)
+    extractLastFrame(f"{folder}/{file}/{file}.gif", f"{folder}/{file}", file)
 
     print("Program completed")
 
-df = pd.read_csv(r"C:\Users\Anakin\Documents\dataAnalyticsProject2026\tests\5.2 Line Graph 2 {Single}\names.csv")
+df = pd.read_csv(r"C:\Users\LaraEdwards\Documents\dataAnalyticsProject2026\tests\folder\names.csv")
 
 animatedGraph(
     title = "Activity Level by Name",
@@ -60,4 +73,6 @@ animatedGraph(
     yAxis = df["activityLevel"],
     fps = 30,
     time = 7,
+    file = "lineGraphTest",
+    folder = "tests/folder"
 )
