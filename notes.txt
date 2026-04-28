@@ -3,3 +3,5 @@
 pip install: flask, pandas, matplotlib, celluloid
 
 Open folder in terminal "py app.py" on home PC "python app.py" on school
+
+convert true/false values in pldb to bools
