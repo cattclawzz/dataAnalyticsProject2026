@@ -27,11 +27,6 @@ def smokingMortality():
 
 df = pd.read_csv(r"C:\Users\Anakin\Documents\dataAnalyticsProject2026\source\static\python\pldb.csv")
 
-# Select all feature columns
 featureCols = [col for col in df.columns if "features." in col.lower()]
 
-# Count True features per row by checking not NaN
-df['num_true_features'] = df[featureCols].notna().sum(axis=1)
-
-# Check the last few rows
-print(df[['num_true_features'] + featureCols].tail())
+print(df[featureCols].notna().sum(axis=1))
