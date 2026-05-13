@@ -1,0 +1,262 @@
+title,country,lineCommentToken,compilesTo,numberOfUsers,appeared
+Java,United States,//,,5550123,1995
+JavaScript,United States,//,,5962666,1995
+C,United States,//,,3793768,1972
+Python,Netherlands,#,,2818037,1991
+C++,United States,//,,4128238,1985
+PHP,Canada,//,,2356101,1995
+Perl,United States,#,,491984,1987
+MATLAB,United States,%,,2661579,1984
+Ruby,Japan,#,,357730,1995
+C#,United States,//,,217261,2000
+Fortran,United States,!,,165151,1957
+R,United States,#,,1075613,1993
+Scala,Switzerland,//,,139471,2004
+Ada,United States,--,,12116,1980
+COBOL,United States,*>,,187188,1959
+Pascal,Switzerland,//,,7708,1970
+Haskell,Various,--,,37628,1990
+SAS,United States,*,,361103,1976
+Lua,Brazil,--,,58860,1993
+Julia,Various,#,,81911,2012
+Prolog,Various,%,,51482,1972
+Objective-C,United States,//,,12380,1984
+Clojure,United States,;,,44933,2007
+Scheme,United States,;,,3796,1970
+Erlang,Sweden,%,,27148,1986
+Bash,United States,#,,61747,1989
+Elixir,United States,#,,55882,2011
+Visual Basic,United States,',,15898,1991
+BASIC,United States,REM,,7025,1964
+awk,United States,#,,4680,1977
+Delphi,United States,//,,7084,1995
+F#,United Kingdom,//,,4316,2005
+Eiffel,Various,--,,1583,1986
+Crystal,Various,#,,27065,2014
+Elm,Various,--,javascript,11377,2012
+Groovy,Various,//,,6056,2003
+D,United States,//,,6311,2001
+Common Lisp,United States,;,,1891,1984
+Maple,Canada,#,,53310,1982
+CoffeeScript,United States,#,javascript,23320,2009
+APL,United States,⍝,,3670,1964
+Nim,Various,#,c cpp objective-c javascript,19118,2008
+LFE,United States,;,,405,2008
+Forth,United States,\,,3230,1970
+Haxe,Unknown,//,,8831,2005
+VBScript,United States,',,3347,1996
+Chapel,United States,//,,16150,2004
+Applescript,United States,--,,1221,1993
+Oz,Germany,%,,661,1991
+Lasso,Canada,//,,396,1995
+fish,Various,#,,24362,2005
+Red,China,;,,6608,2011
+Simula,Norway,!,,1110,1965
+Idris,United Kingdom,--,,6168,2014
+Logo,United States,;,,2895,1967
+AMPL,United States,#,,766,1985
+PicoLisp,Germany,#,,316,1988
+Tex,United States,%,,4276,1978
+BCPL,United Kingdom,//,,1050,1966
+PL/SQL,United States,--,,2355,1991
+Dylan,United Kingdom,//,,636,1992
+Processing,United States,//,,2366,2001
+FLUX,United States,//,,28134,2014
+Fantom,United States,//,,521,2005
+EuLisp,United States,;,,90,1985
+Monkey,United States,',,292,2011
+Agda,Sweden,--,,731,2007
+MUMPS,United States,;,,1345,1966
+Emacs Lisp,United States,;,,1645,1985
+AutoIt,Unknown,;,,1011,1999
+Makefile,United States,#,,1861,1976
+J,United States,NB.,,3779,1990
+MoonScript,United States,--,lua,3585,2011
+Icon,United States,#,,271,1977
+Ballerina,United States,//,,6576,2015
+Flow,United States,//,,27307,2014
+Io,Various,//,,461,2002
+Turing,Canada,%,,525,1982
+idyll,Various,//,,2170,2017
+Mercury,Australia,%,c,939,1995
+QML,Finland,//,,1131,2009
+Frege,Various,--,,4361,2011
+xBase,United States,//,,425,1986
+GNU Octave,United States,%,,2406,1988
+Boo,Brasil,#,,861,2003
+Hy,Various,;,,5559,2013
+Clean,Netherlands,//,,481,1987
+SNOBOL,United States,*,,341,1962
+CLIPS,United States,;,,651,1985
+Pike,Sweden,//,,446,1994
+NetLogo,United States,;,,2193,1999
+API Blueprint,United States,#,,15183,2013
+MiniD,United States,//,,86,2006
+Perl 6,Various,#,,961,2015
+Click,United States,//,,1817,1999
+ATS,United States,//,,576,2013
+Csound,United States,;,,521,1985
+E,United States,#,,406,1997
+Wren,United States,//,,7070,2013
+odin,Various,//,,3571,2016
+LiveScript,United States,#,,395,2011
+Modelica,Sweden,//,,736,1997
+POV-Ray SDL,United States,//,,2169,1991
+Clipper,United States,//,,516,1985
+Batchfile,United States,REM,,4005,1985
+M4,United States,#,,715,1977
+Datalog,Italy,%,,820,1977
+Objective-J,Various,//,,376,2008
+halide,United States,//,,7894,2010
+Speedie,United Kingdom,//,,1,2022
+C3,Sweden,//,,1035,2019
+PowerBuilder,Germany,//,,965,2010
+eC,Canada,//,,900,2004
+AutoHotkey,United States,;,,1761,2003
+Classroom Object Oriented Language,United States,--,,345,1996
+SETL,United States,--,,191,1969
+ECL,United States,//,,1653,2000
+Falcon,Italy,//,,306,2003
+Dc,United States,#,,200,1978
+LiveCode,Scotland,--,,321,2001
+wisp,Unknown,;,,1381,2012
+K,United States,/,,585,1993
+Croc,United States,//,,194,2006
+GAP,Germany,#,,1289,1986
+Sather,United States,--,,126,1990
+CIL,United States,//,,446,1994
+Ragel,The Netherlands,#,,373,2007
+AspectJ,Canada,//,,661,2001
+Ring,Saudi Arabia,#,,431,2016
+HOPE,United Kingdom,---,,145,1978
+OpenVera,United States,//,,105,2001
+Eve,United States,//,,7830,2016
+Fennel,Various,;,,1989,2016
+Golo,Unknown,#,,1018,2012
+NSIS,United States,;,,756,2001
+Expect,Various,#,,1011,1990
+BETA,Norway,//,,156,1983
+Cg,United States,//,,965,2003
+QB64,United States,',,470,2007
+Koka,United States,//,c,2525,2012
+IGOR Pro,United States,//,,415,1993
+CWL,Various,#,,1065,2014
+UNLAMBDA,United States,#,,226,1999
+Ren'Py,England,#,,870,2004
+LPC,Sweden,//,,256,1995
+Reia,United States,#,,899,2008
+carp,Various,;,,5046,2016
+Euphoria,Canada,--,,256,1993
+Guile,United States,;,,376,1993
+Dockerfile,United States,#,,201,2013
+KiXtart,Various,;,,156,1991
+beads-lang,United States,//,,1,2016
+JADE,New Zealand,//,,490,1996
+Bel,United States,;,,1,2019
+PAWN,The Netherlands,//,,785,2006
+JAI,Various,//,,1562,2014
+mgmt,Canada,#,,3781,2015
+Felix,Australia,//,,819,2001
+Slope,United States,;,,1001,2021
+NetLinx,United States,//,,290,2007
+P4,United States,//,,666,2014
+Aldor,United Kingdom,--,,81,1990
+Z shell,United States,#,,1326,1990
+MQL5,Russia,//,,480,2005
+DM,Unknown,//,,201,1994
+Linden Scripting Language,United States,//,,200,2003
+NCAR Command Language,United States,;,,572,1994
+GDScript,Various,#,,201,2008
+FutureBASIC,United States,//,,75,1992
+Eclipse Command Language,Canada,%,,200,2008
+PowerBASIC,United States,',,235,1989
+Filebench WML,United States,#,,547,2011
+Harbour,Various,//,,231,1999
+Refal,United States,*,,101,1968
+carth,Sweden,;,,25,2018
+Mu,United States,#,,1367,2014
+CartoCSS,United States,//,,200,2010
+Jasmin,United States,;,,201,1997
+Literate Agda,Sweden,--,,0,2009
+OpenSCAD,Norway,//,,720,2010
+Game Maker Language,Various,//,,200,1999
+Not Quite C,United States,//,,313,2017
+Objective C++,United States,//,,200,1993
+omega,United States,--,,1,2005
+BLISS,United States,!,,240,1969
+OX,United Kingdom,//,,251,1996
+GCC Machine Description,United States,;,,200,2001
+Praat Script,The Netherlands,#,,1502,1997
+MVEL,Various,//,,235,2003
+ArkScript,France,#,,580,2019
+Cell,Various,//,,106,2017
+Cycript,United States,//,,201,2008
+Raku,United States,#,,16,2019
+Ch,United States,//,,536,2003
+Ezhil,United States,#,,116,2007
+Not eXactly C,United States,//,,125,2006
+Mary,Norway,%,,55,1970
+mun-lang,Various,//,,1461,2019
+Pan,Various,#,,306,2011
+LoomScript,United States,//,,201,2013
+Fable,Various,//,,1,2012
+Operational Control Language,United States,//,,40,1986
+Opal,Germany,--,,288,1994
+FML,United States,#,,0,2012
+Maya Embedded Language,United States,//,,270,2013
+Logos,United States,//,,200,2010
+Guix Workflow Language,United States,;,,1,2017
+MACRO-10,United States,;,,40,1978
+Flow9,Unknown,//,,627,2010
+KRL,United States,//,,90,1976
+Q#,United States,//,,1,2017
+NS Basic,Canada,//,,105,1994
+Module Management System,Australia,!,,0,2005
+dslx,United States,//,,0,2020
+Rc,United States,#,,345,1989
+Gentoo Ebuild,United States,#,,286,1999
+gentee,Russia,//,,130,2018
+PROMAL,United States,;,,55,1986
+dex,United States,--,,1482,2018
+Parrot BASIC,United States,#,,25,2009
+lispyscript,India,;,,756,2012
+Parser 3,Russia,#,,61,1997
+Frink,United States,//,,61,2001
+BitBake,Various,#,,326,2004
+Gherkin,United States,#,,201,2008
+flagship,Germany,//,,1,1986
+Gerbil Scheme,Unknown,;,,1169,2016
+neeilang,Unknown,//,,49,2019
+hilvl,Unknown,//,,7,2015
+holyc,United States,//,,0,2005
+neut,Unknown,;,,816,2018
+Nymph,United States,//,,192,2017
+OCL,United States,--,,950,1997
+Mouse,United States,~,,81,1970
+C shell,United States,#,,116,1978
+Charity,Canada,%,,111,1992
+epsilon,Canada,//,,1,1967
+JS++,United Kingdom,//,javascript,21,2011
+manool,Colombia,--,,67,2018
+Judoscript,Unknown,//,,40,2001
+Finite State Language,Various,//,,0,2016
+Claro,United States,#,,8,2021
+Fjölnir,Iceland,;,,105,1986
+owen-lang,Denmark,//,,13,2019
+JSL,United States,//,,0,1989
+popr,United States,__,c,217,2012
+kai,The Netherlands,//,,73,2016
+BuddyScript,United States,#,,35,2002
+fizz,United States,//,,1,2017
+ldpl,Unknown,#,,199,2019
+Lite-C,Germany,//,,86,2007
+Atomese,Various,;,,1,2007
+Heron,Canada,//,,70,2016
+ISETL,United States,--,,25,1989
+Pnuts,Japan,//,,60,1997
+Bla,Netherlands,--,,1,1994
+blz,United States,#,,25,2015
+ctalk-lang,France,//,,0,1989
+Plot,United States,;,,1,2006
+lain,Unknown,;,,1,2017
+luau,United States,--,,1,2020

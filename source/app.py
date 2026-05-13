@@ -1,14 +1,21 @@
 from flask import Flask, render_template
+import testingtestingonetwothree as test
+import matplotlib.pyplot as plt
+import pandas as pd
+import resetGraphs
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET", "POST"]) 
+@app.route("/") 
 
 def index():
+    foo = test.helloWorld()
     return render_template(
         "index.html",
-        foo = "test"
+        foo = foo
     )
+
+resetGraphs.reset()
 
 #!!flask server!!
 if __name__ == "__main__":
