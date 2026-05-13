@@ -1,15 +1,15 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use('Agg')
 
-import lineGraph, scatterGraph, barGraph, pieChart
+from static.python.lineGraph import *
+from static.python.scatterGraph import *
+from static.python.barGraph import *
+from static.python.pieChart import *
 
 def reset():
     df = pd.read_csv(r"static\python\pldbCleaned.csv")
-    path = r"source\static\images"
+    path = r"static\images"
 
-    lineGraph.lineGraph(
+    lineGraph(
         data = df["appeared"],
         path = path,
         title = "Year created",
@@ -17,7 +17,7 @@ def reset():
         yTitle = "",
     )
 
-    scatterGraph.scatterGraph(
+    scatterGraph(
         data = df,
         path = path,
         xAxis = "appeared",
@@ -25,7 +25,7 @@ def reset():
         title = "Correlation of popularity of a language to year created"
     )
 
-    barGraph.barGraph(
+    barGraph(
         data = df["country"],
         path = path,
         title = "Country created",
