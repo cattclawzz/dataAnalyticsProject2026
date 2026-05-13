@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import testingtestingonetwothree as test
 import matplotlib.pyplot as plt
 import pandas as pd
-import resetGraphs
+import python.resetGraphs as resetGraphs
 
 app = Flask(__name__)
 
